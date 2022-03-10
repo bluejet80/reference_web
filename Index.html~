@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Website 2</title>
+    <link rel="stylesheet" href="style.css"/>
+  <body>
+    <div id="container">
+      <div id="header">
+        <div id="head1"><p id="title">Study Website Design</p>
+        <p class="small-text">This site is for the organization of information on various topics.</p>
+        <p class="small-text">Creation Date: October 23rd, 2021</p>
+        </div>
+        <div class="line-2"></div>
+        <div class="main-link"><a href=#>Java</a></div>
+        <div class="line-2"></div>
+        <div class="main-link"><a href=#>Lisp</a></div>
+        <div class="line-2"></div>
+        <div class="main-link"><a href=#>Python</a></div>
+        <div class="line-2"></div>
+        <div class="main-link"><a href=#>JavaScript</a></div>
+        <div class="line-2"></div>
+        <div class="main-link"><a href=#>HTML/CSS/JS</a></div>
+        <div class="line-2"></div>
+        <div class="main-link"><a href=#>Linux</a></div>
+        <div class="line-2"></div>
+      </div>
+      <div id="main">
+        <div class="section-1">
+          <h1>Emacs Commands</h1>
+          <div class="line-1"></div>
+          <div class="text">
+            <p>
+	    This is the Reference Area for Emacs Keys and Commands. We will start
+	    with the navigation controls and general text manipulation.
+            </p>
+          </div>
+	  <div class="text">
+		  <table>
+			  <tr class="first"><td>This is a main heading</td></tr>
+			  <tr>
+				  <td> This is some text
+				  </td>
+				  <td>Ctrl - M</td>
+			  </tr>
+			  <tr>
+				  <td><p>Move to another Paragraph</p>
+					  <p>Works with letters too</p>
+				  </td>
+				  <td>Ctrl - M</td>
+			  </tr>
+		  </table>
+	  </div>
+        </div>
+        <div class="section-2">
+          <h1>Section  2</h1>
+          <div class="line-1"></div>
+        </div>
+        <div class="section-3">
+          <h1>Section 3</h1>
+          <div class="line-1"></div>
+          <div class="text">
+            <p>
+            Here today is the unveiling of the great monolyth that we call society. We cannot
+            escape it's clutches, each day we sink deeper into its being. Often close to 
+            the end of our lives you cannot tell the difference between us and the environment
+            that surrounds us. Everything mixes together and resolves to one color. 
+            </p>
+          </div>
+        </div>
+        <div class="section-4">
+          <h1>Section  4</h1>
+          <div class="line-1"></div>
+          <div class="sub">
+          <h2>Topic Contents</h2>
+          <p>Body Paragraph oneHere today is the unveiling of the great monolyth that we call society. We cannot
+            escape it's clutches, each day we sink deeper into its being. Often close to 
+            the end of our lives you cannot tell the difference between us and the environment
+            that surrounds us. Everything mixes together and resolves to one color. </p>
+          <p>Body Paragraph oneHere today is the unveiling of the great monolyth that we call society. We cannot
+            escape it's clutches, each day we sink deeper into its being. Often close to 
+            the end of our lives you cannot tell the difference between us and the environment
+            that surrounds us. Everything mixes together and resolves to one color. </p>
+          </div>
+          <div class="sub">
+          <h2>Topic Contents</h2>
+          <p>Body Paragraph oneHere today is the unveiling of the great monolyth that we call society. We cannot
+            escape it's clutches, each day we sink deeper into its being. Often close to 
+            the end of our lives you cannot tell the difference between us and the environment
+            that surrounds us. Everything mixes together and resolves to one color. </p>
+          <p>Body Paragraph oneHere today is the unveiling of the great monolyth that we call society. We cannot
+            escape it's clutches, each day we sink deeper into its being. Often close to 
+            the end of our lives you cannot tell the difference between us and the environment
+            that surrounds us. Everything mixes together and resolves to one color. </p>
+          </div>
+        </div>
+        <div class="section-5">
+          <h1>Section  5</h1>
+          <div class="line-1"></div>
+        </div>
+        <div class="section-6">
+          <h1>Section  6</h1>
+          <div class="line-1"></div>
+        </div>
+        <div class="section-7">
+          <h1>Section  7</h1>
+          <div class="line-1"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

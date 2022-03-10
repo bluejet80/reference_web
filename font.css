@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "aileron-light";
+  src: url("fonts/aileron/aileron-light-webfont.woff") format("woff2"),
+    url("fonts/aileron/aileron-light-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "aileron-reg";
+  src: url("fonts/aileron/aileron-regular-webfont.woff") format("woff2"),
+    url("fonts/aileron/aileron-regular-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "aileron-black";
+  src: url("fonts/aileron/aileron-black-webfont.woff") format("woff2"),
+    url("fonts/aileron/aileron-black-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "milkshakeregular";
+  src: url("fonts/milkshake/milkshake-webfont.woff") format("woff"),
+    url("fonts/milkshake/milkshake-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cooperhewitt";
+  src: url("fonts/cooper/cooperhewitt-semibold-webfont.woff") format("woff"),
+    url("fonts/cooper/cooperhewitt-semibold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bebas-reg";
+  src: url("fonts/bebas/bebasneue-regular-webfont.woff") format("woff"),
+    url("fonts/bebas/bebasneue-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
