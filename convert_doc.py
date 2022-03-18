@@ -1,7 +1,7 @@
 
 
 
-with open('vi_cmds', 'r+', encoding='utf-8') as file:
+with open('transfer_file', 'r+', encoding='utf-8') as file:
 
     lines = file.readlines()
     file.seek(0)

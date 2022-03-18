@@ -1,0 +1,16 @@
+
+- Git hub Commands
+
+Clone a repository, git clone <web_link>
+To create a repository from a existing directory, *******
+First Create a new repository on github, GitHub Website
+Then copy the link to the repository, Copy Link
+Then initialize the repository in the directory, git init
+Then link the newly created github repo, git remote add origin <weblink>
+Then do a pull to get the README.md file, git pull origin master
+Now your branch should be current, yay!
+Now to add the files in the directory, git add .
+Then make a commit, git commit -m "whatever"
+Then pushit back up to github, git push origin master
+If for some reason you do this out of order and it comes up with an error that the histories are unrelated, git pull origin master --allow-unrelated-histories
+Working with other branches, ********

@@ -1,0 +1,100 @@
+Regular Expressions, *****
+These Regular expressions work in, iv sed awk not bash
+basic format, /something/g (g stands for Global)
+the G is a Flag, Other flags are:
+Global, g
+Case Insensitive, i
+Multiline, m
+Single line(dotall), s
+Unicode, u
+Sticky, y
+Basic Commands, *****
+To match a string put it between the slashes, /wo/g
+match one or more of the preceding token, /wo+/g
+Optional search token, /wo?/g
+Optional match and as many as there are, /wo*/g
+Match the following character can be anything except line breaks, /wo./g
+Match the following two characters can be anything except line breaks, /wo../g
+To match at the beginning of the line, /^word/
+To match at the end of the line, /word$/
+Escape Character, \
+Match any word, \w
+Match space, \s
+These are reversed when capitalized, \W \S
+Returns any word that starts with re, re\w*
+Returns any word that ends in ty, \w*ty
+Get any word or part of word that is 4 digits, \w{4}
+Get any word or part of word that is 4 digits or more, \w{4,}
+Get any word or part of word that is 4 digits and less than 5, \w{4,5}
+Get any three letter word that ends in at and begins with either f or c, /[fc]at/g
+
+The Find command, ******
+returns files that end with .un, find -name '*.un*'
+Delete files that end with .un, find -name '*.un*' -delete
+
+The Sed Command, ********
+Replacing words and characters, **********
+Normal find and replace syntax, 's/find/replace/[flags]'
+To insert a regex in the find, \(regex\)
+Returns everyword in a string with ing added, 's/\(\w*\)/\1ing/ig'
+
+Sed Notes, *****************
+changing a file, *****************
+sed -i s:\([[:digit:]]*.\):: org-roam, remove the numbers
+sed -i '/~/d' org-roam, delete the lines with the tilde
+To create a backup file add an ext to the -i
+sed -i.bkp '/~/d' file
+
+Changing filenames, ************
+ls | sed s:\([[:digit:]]*.\)\(.*\):mv & \2: | sh, removes the numbers from the filenames. 
+Now I want to use the file of filenames to determine what org-roam files actually have relevance. 
+Had to install gnu sed on my mac cause the native version would not work with somethings.
+Adding text to a file when the pattern matches, *******
+sed '/jarett/a Text to add' file
+This adds the text to the line after where the pattern was matched
+sed '/jarett/i Text to add' file
+This adds the text on the line before the pattern that was matched
+sed '/jarett/c Text' file 
+This replaces the whole line with the Text
+
+Extracting a section of lines from a file
+sed '/food/,/grapes/!d' file
+This will extract the lines from the one containing 'food' to the line containing 'grapes'
+sed -n '/food/,/grapes/p' file
+This does the same thing
+
+To add a line to the file,*********
+sed '4i Textstuff' file
+This will add Textstuff to the line before line 4
+To add text to beginning of file, sed '^i textstuff' file
+to add text to end of file, sed '$i textstuff' file
+
+To add line numbers before each line of the file, sed = file
+To insert an empty line between each line, sed G file
+To delete all the empty lines from a file, sed '/^$/d' file
+To delete all the comments, sed '/^#.*/d' file
+If we want to delete the comments and the empty lines at the same time, 
+sed '/^#.*/d;/^$/d' test
+
+Sequence Command is next, *******
+The sequence command does stuff so many times.
+We can use this to create files used in conjuction with
+the sed command. 
+
+seq 10 | sed '
+
+Awk Notes, *******************
+Basic Awk Syntax, awk 'BEGIN {action;} /search/ {action;} END {action;}' filename
+Beginning and End, syntax is optional
+Internal Variables,*****
+Number of Fields, nf
+Number of records, nr
+Open face operator, ofs
+Face operator, fs
+Record separator, rs
+Used when working with multiple files, fnr
+Awk Examples, *****
+Print file, awk '{print}' file
+
+
+

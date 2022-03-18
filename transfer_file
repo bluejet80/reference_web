@@ -1,0 +1,61 @@
+<tr><td>Navigating Multiple files buffers</td><td>**********</td></tr>
+<tr><td>First save your current file</td><td>:w</td></tr>
+<tr><td>to open a new file</td><td>:n <filename></td></tr>
+<tr><td>To switch between two files</td><td>:n#</td></tr>
+<tr><td>To Open read-only</td><td>view <filename></td></tr>
+<tr><td>To reload last saved version of a file</td><td>:e!</td></tr>
+<tr><td>Buffers</td><td>**************</td></tr>
+<tr><td>Switch between buffers</td><td>:b<buffer number></td></tr>
+<tr><td>Get a list of all the buffers</td><td>:ls or :files</td></tr>
+<tr><td>Another way to switch between buffers</td><td>:b<filename></td></tr>
+<tr><td>Using tabs</td><td>**************</td></tr>
+<tr><td>To open vi with tabs</td><td>vi -p file1 file2</td></tr>
+<tr><td>To open tabs while already in vi</td><td> :tabedit file2</td></tr>
+<tr><td>To navigate between tabs</td><td>gt - next/ gT - previous</td></tr>
+<tr><td>You can also use the index of the tab</td><td>{i}gt</td></tr>
+<tr><td>To move directly to the first tab</td><td>:tabfirst</td></tr>
+<tr><td>To move directly to the last tab</td><td>:tablast</td></tr>
+<tr><td>To list all the open tabs</td><td>:tabs</td></tr>
+<tr><td>To close a tab</td><td>:tabclose</td></tr>
+<tr><td>To close all other tabs but the one you are on</td><td>:tabonly</td></tr>
+<tr><td>To open vi split screen horiz</td><td>vi -o file1 file2</td></tr>
+<tr><td>To open vi split screen vert</td><td>vi -O file1 file2</td></tr>
+<tr><td>Split screen within vi horiz</td><td>:split</td></tr>
+<tr><td>Split screen within vi vert</td><td>:vsplit</td></tr>
+<tr><td>Switch window left</td><td>c-w h or left-arrow</td></tr>
+<tr><td>Switch window down</td><td>c-w j or dn-arrow</td></tr>
+<tr><td>Switch window up</td><td>c-w k or up-arrow</td></tr>
+<tr><td>Switch window right</td><td>c-w l or right-arrow</td></tr>
+<tr><td>To cycle through split windows</td><td>c-w w</td></tr>
+<tr><td>To close current window</td><td>:close</td></tr>
+<tr><td>To close all but current window</td><td>:only</td></tr>
+<tr><td>To open a terminal window</td><td>:! bash</td></tr>
+<tr><td>Session Files</td><td>**************</td></tr>
+<tr><td>To create session file</td><td>:mksession session_filename.vim</td></tr>
+<tr><td>To start vim with a particular session</td><td>vim -S session_filename.vim</td></tr>
+<tr><td>To open your session inside vi</td><td>:source session_filename.vim</td></tr>
+<tr><td>If you make any changes and want to resave the session</td><td>:mks!</td></tr>
+<tr><td>Fold Code Blocks</td><td>***********</td></tr>
+<tr><td>go to the begining of the function body and hit</td><td>mb  this will place a mark </td></tr>
+<tr><td>Then go to the bottom of the code block with</td><td>%</td></tr>
+<tr><td>And then fold it by typing</td><td>zf'b</td></tr>
+<tr><td>You can do the same thing with line numbers</td><td>****</td></tr>
+<tr><td>just type</td><td>:5,16fo this will fold the function block</td></tr>
+<tr><td>To toggle between open and closed type</td><td>zo - open /  zc - close</td></tr>
+<tr><td>Or to toggle just type</td><td>za</td></tr>
+<tr><td>Auto complete mode</td><td>ctrl-n</td></tr>
+<tr><td>File Explorer</td><td>******************</td></tr>
+<tr><td>To open a file explorer</td><td>:Explore</td></tr>
+<tr><td>To open in horiz split</td><td>:Sexplore</td></tr>
+<tr><td>To open in vertical split</td><td>:Vexplore</td></tr>
+<tr><td>Exit</td><td>:q</td></tr>
+<tr><td>Regex Stuff</td><td>****************</td></tr>
+<tr><td>To delete the pattern matched in the whole file</td><td>:%s/pattern//</td></tr>
+<tr><td>To search and replace on specific lines</td><td>:5,12s/foo/bar/</td></tr>
+<tr><td>You can search and replace on specific lines and columns</td><td>*****</td></tr>
+<tr><td>Here is an example of the syntax</td><td>:7s/\%19cline/plate/  This will replace line with plate in row 7 col 19</td></tr>
+<tr><td>Macros</td><td>****************</td></tr>
+<tr><td>To record a macro and set it to an alpha</td><td>qa this starts recording and then sets the macro to 'a'</td></tr>
+<tr><td>to end recording press</td><td>q in normal mode</td></tr>
+<tr><td>to run the macro then press</td><td>@a</td></tr>
+<tr><td>To repeat it on multiple lines press</td><td>@@</td></tr>

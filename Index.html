@@ -39,70 +39,309 @@
           </div>
 	  <div class="text">
 		  <table>
-			  <tr class="first"><td colspan="2">This is a main heading</td></tr>
-			  <tr>
-				  <td> This is some text
-				  </td>
-				  <td>Ctrl - M</td>
-			  </tr>
-			  <tr>
-				  <td> This is a long paragraph to see what happens when text is long. This time I want to type a lot of text so that we can see what happens when the texts is long. 
-				  </td>
-				  <td>Ctrl - M</td>
-			  </tr>
-			  
-<tr><td>Move left</td><td>h</td></tr>
-<tr><td>Move down</td><td>j</td></tr>
-<tr><td>Move up</td><td>k</td></tr>
-<tr><td>Move right</td><td>l</td></tr>
+			  <tr class="first"><td colspan="2">Text Manipulation</td></tr>
+<tr><td>To make a word CAPITALIZED position cursor at the beginning of the word</td><td>a-u</td></tr>
+<tr><td>To turn a long line into a paragraph</td><td>a-q</td></tr>
+<tr><td>To copy/yank text</td><td>a-w</td></tr>
+<tr><td>To paste text</td><td>c-y</td></tr>
+<tr><td>To cut text</td><td>c-w</td></tr>
+			  <tr class="first"><td colspan="2">To Move around Text</td></tr>
+<tr><td>Beginning of line</td><td>c-a</td></tr>
+<tr><td>End of line</td><td>c-e</td></tr>
+<tr><td>Up a line</td><td>c-p</td></tr>
+<tr><td>Down a line</td><td>c-n</td></tr>
+<tr><td>Move up and Down by Paragraph</td><td>a-e a-a</td></tr>
+<tr><td>Forward and back by words</td><td>a-f a-b</td></tr>
+<tr><td>Center cursor on page</td><td>c-l</td></tr>
+			  <tr class="first"><td colspan="2">Grow or Shrink Text</td></tr>
+<tr><td>To make text bigger</td><td>c-x c-+</td></tr>
+<tr><td>To make text smaller</td><td>c-x c--</td></tr>
+			  <tr class="first"><td colspan="2">Buffers and Windows</td></tr>
+<tr><td>Switch between buffer windows</td><td>c-x o</td></tr>
+<tr><td>Close all other windows except the one you are on</td><td>c-x 1</td></tr>
+<tr><td>Close the buffer you are on</td><td>c-x 0</td></tr>
+<tr><td>Split the window horizontally</td><td>c-x 2</td></tr>
+<tr><td>Split the window vertically</td><td>c-x 3</td></tr>
+<tr><td>Save as a new file</td><td>c-c w</td></tr>
+<tr><td>Winner-Mode to Undo a change in the buffer</td><td>c-c left</td></tr>
+<tr><td>Select all the text in a buffer</td><td>c-x h</td></tr>
+<tr><td>To run commands</td><td>a-x</td></tr>
+<tr><td>To Search buffer</td><td>c-s</td></tr>
+<tr><td>Reverse Search</td><td>c-r</td></tr>
+			  <tr class="first"><td colspan="2">Helpful Information</td></tr>
+<tr><td>Look for help on a function</td><td>c-h f</td></tr>
+<tr><td>Show available commands for current mode</td><td>c-h m</td></tr>
+<tr><td>Help related to variables</td><td>c-h v</td></tr>
+<tr><td>To find which function is bound to a key</td><td>c-h k</td></tr>
+<tr><td>To see which key bindings are defined for a given function</td><td>c-h w</td></tr>
+<tr><td>To see whether other options are available</td><td>c-h ?</td></tr>
+			  <tr class="first"><td colspan="2">Slime Commands</td></tr>
+<tr><td>x</td><td>x</td></tr>
+<tr><td>x</td><td>x</td></tr>
 		  </table>
 	  </div>
         </div>
         <div class="section-2">
-          <h1>Section  2</h1>
+          <h1>Vim Commands</h1>
           <div class="line-1"></div>
+	  <div class="text">
+            <p>
+	    This is the reference area for VIM Commands. We will start with navigation and text manipulation.
+            </p>
+	  </div>
+	  <div class="text">
+		  <table>
+			  <tr class="first"><td colspan="2">Navigation</td></tr>
+<tr><td>One Character Left</td><td>h</td></tr>
+<tr><td>One Character Down</td><td>j</td></tr>
+<tr><td>One Character Up</td><td>k</td></tr>
+<tr><td>One Character Right</td><td>l</td></tr>
+<tr><td>One word to the right</td><td>w</td></tr>
+<tr><td>One word to the left</td><td>b</td></tr>
+<tr><td>Moves to the end of the word</td><td>e</td></tr>
+<tr><td>Move to the start of a line</td><td>^</td></tr>
+<tr><td>Move to the end of a line</td><td>$</td></tr>
+<tr><td>Move to the Top of the Screen</td><td>H</td></tr>
+<tr><td>Move to the bottom of the Screen</td><td>L</td></tr>
+<tr><td>Move page down</td><td>c-f</td></tr>
+<tr><td>Move page up</td><td>c-b</td></tr>
+<tr><td>Move half page down</td><td>c-d</td></tr>
+<tr><td>Move half page up</td><td>c-u</td></tr>
+			  <tr class="first"><td colspan="2">Inserting Text</td></tr>
+<tr><td>To Insert Text at the end of a line</td><td>A</td></tr>
+<tr><td>to Insert text to the right of the cursor</td><td>a</td></tr>
+<tr><td>To Insert text at the beginning of the line</td><td>I</td></tr>
+<tr><td>To open a new line below the cursor</td><td>o</td></tr>
+<tr><td>To open a new line above the cursor</td><td>O</td></tr>
+<tr><td>Undo previous command</td><td>u</td></tr>
+<tr><td>To replace a word place the cursor at the beginning of the word</td><td>cw</td></tr>
+<tr><td>to replace a character</td><td>r</td></tr>
+<tr><td>To insert a return</td><td>r <enter></td></tr>
+<tr><td>To change a part of the word place cursor to the right of that which is to be saved</td><td>cw</td></tr>
+<tr><td>to delete a line</td><td>dd</td></tr>
+<tr><td>to replace a whole line</td><td>S</td></tr>
+			  <tr class="first"><td colspan="2">Yank and Delete and Put</td></tr>
+<tr><td>yank three words</td><td>y3w</td></tr>
+<tr><td>yank three letters</td><td>y3l</td></tr>
+<tr><td>yank in current word</td><td>yiw</td></tr>
+<tr><td>yank all word (includes a trailing space)</td><td>yaw</td></tr>
+<tr><td>yank the current line</td><td>yy</td></tr>
+<tr><td>yank three lines starting at the current one</td><td>3yy</td></tr>
+<tr><td>yank all paragraph (includes trailing newline)</td><td>yap</td></tr>
+<tr><td>To yank the entire line</td><td>yy</td></tr>
+<tr><td>to put the yanked text below current line</td><td>p</td></tr>
+<tr><td>to put the yanked text above current line</td><td>P</td></tr>
+<tr><td>All commands work with numbers to yank 5 lines</td><td>5yy</td></tr>
+<tr><td>Yank text inline yanks text to end of line</td><td>y$</td></tr>
+<tr><td>To move lines use</td><td>dd</td></tr>
+<tr><td>Then put the line where you want it</td><td>p</td></tr>
+<tr><td>To swap two lines</td><td>ddp</td></tr>
+<tr><td>To delete two words</td><td>2dw</td></tr>
+<tr><td>To delete the body of a function</td><td>d%</td></tr>
+<tr><td>You can specify the range</td><td>:34</td></tr>
+			  <tr class="first"><td colspan="2">Using Marks</td></tr>
+<tr><td>Go to the line where the selection begins</td><td>mk</td></tr>
+<tr><td>this marks the point to alpha 'k'</td><td>Any other alpha can be used as well</td></tr>
+<tr><td>Then move down to the bottom of the selection</td><td>y'k this will yank the lines</td></tr>
+<tr><td>this will delete the lines</td><td>d'k</td></tr>
+			  <tr class="first"><td colspan="2">Using ex Commands</td></tr>
+<tr><td>Show line numbers</td><td>:set nu</td></tr>
+<tr><td>Basic Syntax</td><td>:line#,line# co line#</td></tr>
+<tr><td>Copy lines</td><td>co</td></tr>
+<tr><td>Designate end of file</td><td>$</td></tr>
+<tr><td>Designate from the current line</td><td>.</td></tr>
+<tr><td>Select all lines</td><td>%</td></tr>
+<tr><td>Move lines</td><td>m</td></tr>
+<tr><td>Delete lines</td><td>d</td></tr>
+<tr><td>Yank lines</td><td>ya</td></tr>
+<tr><td>To select and yank current line to end of file</td><td>:.,$ ya</td></tr>
+			  <tr class="first"><td colspan="2">Searching and Replacing</td></tr>
+<tr><td>To find a character string</td><td>/ followed by the string</td></tr>
+<tr><td>To scroll through the search results</td><td>n N</td></tr>
+<tr><td>If you want vi to ignore case</td><td>:set ic</td></tr>
+<tr><td>The find and replace syntax is</td><td>:g/search-str/s//replace-str/g</td></tr>
+<tr><td>To substitute 'new' for 'old where g is globally</td><td>:s/old/new/g</td></tr>
+<tr><td>To Turn off highlighting until next search</td><td>:noh</td></tr>
+<tr><td>To search a word use word boundary symbols</td><td>:s\<vi\>:VIM:g</td></tr>
+<tr><td>Match words that are at least 4 charaters long</td><td>\w\{5}</td></tr>
+<tr><td>Use Character groupings</td><td>\(character group\)</td></tr>
+<tr><td>To find Upper and lower case the</td><td>/[T\|t]he</td></tr>
+<tr><td>To find 2 or 4 matches of letters</td><td>/\(t\|r\|m\)\{2,4}</td></tr>
+<tr><td>This would be used to swap the first two words of a line</td><td>:% s:\(\w\+\)\(\s\+\)\(\w\+\):\3\2\1:</td></tr>
+<tr><td>Pattern match only the first occurance in the line</td><td>/^.\{-}\zsfoo</td></tr>
+<tr><td>Go to a specific line number</td><td>#gg</td></tr>
+<tr><td>Go to end of file</td><td>G</td></tr>
+<tr><td>To insert one file into another</td><td>:line# r filename</td></tr>
+<tr><td>To select and copy the entire file</td><td>ggyG</td></tr>
+		  </table>
+	  </div>
         </div>
+        <div class="section-2">
+          <h1>Vim Commands</h1>
+          <div class="line-1"></div>
+	  <div class="text">
+            <p>
+	    Continuation of the Vi Commands
+            </p>
+	  </div>
+	  <div class="text">
+		  <table>
+			  <tr class="first"><td colspan="2">Navigating Multiple File Buffers</td></tr>
+<tr><td>First save your current file</td><td>:w</td></tr>
+<tr><td>to open a new file</td><td>:n <filename></td></tr>
+<tr><td>To switch between two files</td><td>:n#</td></tr>
+<tr><td>To Open read-only</td><td>view <filename></td></tr>
+<tr><td>To reload last saved version of a file</td><td>:e!</td></tr>
+			  <tr class="first"><td colspan="2">Buffers</td></tr>
+<tr><td>Switch between buffers</td><td>:b<buffer number></td></tr>
+<tr><td>Get a list of all the buffers</td><td>:ls or :files</td></tr>
+<tr><td>Another way to switch between buffers</td><td>:b<filename></td></tr>
+			  <tr class="first"><td colspan="2">Using Tabs</td></tr>
+<tr><td>To open vi with tabs</td><td>vi -p file1 file2</td></tr>
+<tr><td>To open tabs while already in vi</td><td> :tabedit file2</td></tr>
+<tr><td>To navigate between tabs</td><td>gt - next/ gT - previous</td></tr>
+<tr><td>You can also use the index of the tab</td><td>{i}gt</td></tr>
+<tr><td>To move directly to the first tab</td><td>:tabfirst</td></tr>
+<tr><td>To move directly to the last tab</td><td>:tablast</td></tr>
+<tr><td>To list all the open tabs</td><td>:tabs</td></tr>
+<tr><td>To close a tab</td><td>:tabclose</td></tr>
+<tr><td>To close all other tabs but the one you are on</td><td>:tabonly</td></tr>
+<tr><td>To open vi split screen horiz</td><td>vi -o file1 file2</td></tr>
+<tr><td>To open vi split screen vert</td><td>vi -O file1 file2</td></tr>
+<tr><td>Split screen within vi horiz</td><td>:split</td></tr>
+<tr><td>Split screen within vi vert</td><td>:vsplit</td></tr>
+<tr><td>Switch window left</td><td>c-w h or left-arrow</td></tr>
+<tr><td>Switch window down</td><td>c-w j or dn-arrow</td></tr>
+<tr><td>Switch window up</td><td>c-w k or up-arrow</td></tr>
+<tr><td>Switch window right</td><td>c-w l or right-arrow</td></tr>
+<tr><td>To cycle through split windows</td><td>c-w w</td></tr>
+<tr><td>To close current window</td><td>:close</td></tr>
+<tr><td>To close all but current window</td><td>:only</td></tr>
+<tr><td>To open a terminal window</td><td>:! bash</td></tr>
+			  <tr class="first"><td colspan="2">Session Files</td></tr>
+<tr><td>To create session file</td><td>:mksession session_filename.vim</td></tr>
+<tr><td>To start vim with a particular session</td><td>vim -S session_filename.vim</td></tr>
+<tr><td>To open your session inside vi</td><td>:source session_filename.vim</td></tr>
+<tr><td>If you make any changes and want to resave the session</td><td>:mks!</td></tr>
+			  <tr class="first"><td colspan="2">Fold Code Blocks</td></tr>
+<tr><td>go to the begining of the function body and hit</td><td>mb  this will place a mark </td></tr>
+<tr><td>Then go to the bottom of the code block with</td><td>%</td></tr>
+<tr><td>And then fold it by typing</td><td>zf'b</td></tr>
+			  <tr class="second"><td colspan="2">You can do the same thing with line numbers</td></tr>
+<tr><td>just type</td><td>:5,16fo this will fold the function block</td></tr>
+<tr><td>To toggle between open and closed type</td><td>zo - open /  zc - close</td></tr>
+<tr><td>Or to toggle just type</td><td>za</td></tr>
+<tr><td>Auto complete mode</td><td>ctrl-n</td></tr>
+			  <tr class="first"><td colspan="2">File Explorer</td></tr>
+<tr><td>To open a file explorer</td><td>:Explore</td></tr>
+<tr><td>To open in horiz split</td><td>:Sexplore</td></tr>
+<tr><td>To open in vertical split</td><td>:Vexplore</td></tr>
+<tr><td>Exit</td><td>:q</td></tr>
+			  <tr class="first"><td colspan="2">Regex Stuff</td></tr>
+<tr><td>To delete the pattern matched in the whole file</td><td>:%s/pattern//</td></tr>
+<tr><td>To search and replace on specific lines</td><td>:5,12s/foo/bar/</td></tr>
+			  <tr class="second"><td colspan="2">You can search and replace on specific lines and columns</td></tr>
+<tr><td>Here is an example of the syntax</td><td>:7s/\%19cline/plate/  This will replace line with plate in row 7 col 19</td></tr>
+			  <tr class="first"><td colspan="2">Macros</td></tr>
+<tr><td>To record a macro and set it to an alpha</td><td>qa this starts recording and then sets the macro to 'a'</td></tr>
+<tr><td>to end recording press</td><td>q in normal mode</td></tr>
+<tr><td>to run the macro then press</td><td>@a</td></tr>
+<tr><td>To repeat it on multiple lines press</td><td>@@</td></tr>
+		  </table>
+	  </div>
+	  </div>
         <div class="section-3">
-          <h1>Section 3</h1>
+          <h1>Git Hub Commands</h1>
           <div class="line-1"></div>
           <div class="text">
-            <p>
-            Here today is the unveiling of the great monolyth that we call society. We cannot
-            escape it's clutches, each day we sink deeper into its being. Often close to 
-            the end of our lives you cannot tell the difference between us and the environment
-            that surrounds us. Everything mixes together and resolves to one color. 
-            </p>
+		  <p>This is where the info on all the Git And Github stuff goes</p>
+          </div>
+          <div class="text">
+		  <table>
+			  <tr class="first"><td colspan="2">This is the GitHub Stuff</td></tr>
+<tr><td>Clone a repository</td><td>git clone <web_link></td></tr>
+			  <tr class="first"><td colspan="2">To Create a repo from an existing directory</td></tr>
+<tr><td>First Create a new repository on github</td><td>GitHub Website</td></tr>
+<tr><td>Then copy the link to the repository</td><td>Copy Link</td></tr>
+<tr><td>Then initialize the repository in the directory</td><td>git init</td></tr>
+<tr><td>Then link the newly created github repo</td><td>git remote add origin weblink</td></tr>
+<tr><td>Then do a pull to get the README.md file</td><td>git pull origin master</td></tr>
+<tr><td>Now your branch should be current</td><td>yay!</td></tr>
+<tr><td>Now to add the files in the directory</td><td>git add .</td></tr>
+<tr><td>Then make a commit</td><td>git commit -m "whatever"</td></tr>
+<tr><td>Then pushit back up to github</td><td>git push origin master</td></tr>
+<tr><td>If for some reason you do this out of order and it comes up with an error that the histories are unrelated</td><td>git pull origin master --allow-unrelated-histories</td></tr>
+			  <tr class="first"><td colspan="2">Working with other branches</td></tr>
+		  </table>
           </div>
         </div>
         <div class="section-4">
-          <h1>Section  4</h1>
+          <h1>Other Stuff</h1>
           <div class="line-1"></div>
-          <div class="sub">
-          <h2>Topic Contents</h2>
-          <p>Body Paragraph oneHere today is the unveiling of the great monolyth that we call society. We cannot
-            escape it's clutches, each day we sink deeper into its being. Often close to 
-            the end of our lives you cannot tell the difference between us and the environment
-            that surrounds us. Everything mixes together and resolves to one color. </p>
-          <p>Body Paragraph oneHere today is the unveiling of the great monolyth that we call society. We cannot
-            escape it's clutches, each day we sink deeper into its being. Often close to 
-            the end of our lives you cannot tell the difference between us and the environment
-            that surrounds us. Everything mixes together and resolves to one color. </p>
-          </div>
-          <div class="sub">
-          <h2>Topic Contents</h2>
-          <p>Body Paragraph oneHere today is the unveiling of the great monolyth that we call society. We cannot
-            escape it's clutches, each day we sink deeper into its being. Often close to 
-            the end of our lives you cannot tell the difference between us and the environment
-            that surrounds us. Everything mixes together and resolves to one color. </p>
-          <p>Body Paragraph oneHere today is the unveiling of the great monolyth that we call society. We cannot
-            escape it's clutches, each day we sink deeper into its being. Often close to 
-            the end of our lives you cannot tell the difference between us and the environment
-            that surrounds us. Everything mixes together and resolves to one color. </p>
-          </div>
+	  <div class="text">
+	  <table>
+			  <tr class="first"><td colspan="2">Markup Commands</td></tr>
+<tr><td>linebreak</td><td>end line with two or more spaces</td></tr>
+<tr><td>Code Block</td><td>use three single quotes</td></tr>
+<tr><td>Images</td><td>![name](/images/tux.png)</td></tr>
+<tr><td>Horizontal rules</td><td>three or more astrix*** or dashes---</td></tr>
+<tr><td>Hyperlinks</td><td>[Duck Duck Go](https://duckduckgo.com)</td></tr>
+<tr><td>URLs and emails</td><td>&lt;email@email.com&gt; &lt;www.google.com&gt;</td></tr>
+<tr><td>Reference links within the document</td><td>toplink: [html/css][1] bottomlink:[1]</td></tr>
+	 </table>
+	  </div>
+	  <div class="text"><p>I wanted to learn markup because I want to outline all the repositories on my git hub account in the main Readme file.</div>
+          <div class="line-1"></div>
+	  <div class="text">
+	 <table class="table2">
+		  <tr class="first"><td colspan="2">HTML Hacks</td></tr>
+		  <tr class="second"><td colspan="2">Prevent HTML Tags from Processing</td></tr>
+		 <tr><td>Less than</td><td>&amplt; = &lt;</td></tr>
+		 <tr><td>Greater than</td><td>&ampgt; = &gt;</td></tr>
+	 </table>
+	  </div>
         </div>
         <div class="section-5">
-          <h1>Section  5</h1>
+          <h1>Regular Expressions</h1>
           <div class="line-1"></div>
+	  <div class="text">
+		<table>
+<tr><td>These Regular expressions work in</td><td>iv sed awk, not bash</td></tr>
+<tr><td>basic format</td><td>/something/g (g stands for Global)</td></tr>
+<tr><td>the G is a Flag</td><td>Other flags are:</td></tr>
+<tr><td>Global</td><td>g</td></tr>
+<tr><td>Case Insensitive</td><td>i</td></tr>
+<tr><td>Multiline</td><td>m</td></tr>
+<tr><td>Single line(dotall)</td><td>s</td></tr>
+<tr><td>Unicode</td><td>u</td></tr>
+<tr><td>Sticky</td><td>y</td></tr>
+		  <tr class="first"><td colspan="2">Basic Commands<td></tr>
+<tr><td>To match a string put it between the slashes</td><td>/wo/g</td></tr>
+<tr><td>match one or more of the preceding token</td><td>/wo+/g</td></tr>
+<tr><td>Optional search token</td><td>/wo?/g</td></tr>
+<tr><td>Optional match and as many as there are</td><td>/wo*/g</td></tr>
+<tr><td>Match the following character can be anything except line breaks</td><td>/wo./g</td></tr>
+<tr><td>Match the following two characters can be anything except line breaks</td><td>/wo../g</td></tr>
+<tr><td>Escape Character</td><td>\</td></tr>
+<tr><td>Match any word</td><td>\w</td></tr>
+<tr><td>Match space</td><td>\s</td></tr>
+<tr><td>These are reversed when capitalized</td><td>\W \S</td></tr>
+<tr><td>Returns any word that starts with re</td><td>re\w*</td></tr>
+<tr><td>Returns any word that ends in ty</td><td>\w*ty</td></tr>
+<tr><td>Get any word or part of word that is 4 digits</td><td>\w{4}</td></tr>
+<tr><td>Get any word or part of word that is 4 digits or more</td><td>\w{4,}</td></tr>
+<tr><td>Get any word or part of word that is 4 digits and less than 5</td><td>\w{4,5}</td></tr>
+<tr><td>Get any three letter word that ends in at and begins with either f or c</td><td>/[fc]at/g</td></tr>
+		  <tr class="first"><td colspan="2">The Find Command</td></tr>
+<tr><td>returns files that end with .un</td><td>find -name '*.un*'</td></tr>
+<tr><td>Delete files that end with .un</td><td>find -name '*.un*' -delete</td></tr>
+		  <tr class="first"><td colspan="2">The Sed Command</td></tr>
+		  <tr class="second"><td colspan="2">Replacing words and Characters</td></tr>
+<tr><td>Normal find and replace syntax</td><td>'s/find/replace/[flags]'</td></tr>
+<tr><td>To insert a regex in the find</td><td>\(regex\)</td></tr>
+<tr><td>Returns everyword in a string with ing added</td><td>'s/\(\w*\)/\1ing/ig'</td></tr>
+		</table>
+	  </div>
         </div>
         <div class="section-6">
           <h1>Section  6</h1>

@@ -1,0 +1,150 @@
+Vim Commands, *******************
+Navigation, *********
+One Character Left, h
+One Character Down, j
+One Character Up, k
+One Character Right, l
+One word to the right, w
+One word to the left, b
+Moves to the end of the word, e
+Move to the start of a line, ^
+Move to the end of a line, $
+Move to the Top of the Screen, H
+Move to the bottom of the Screen, L
+Move page down, c-f
+Move page up, c-b
+Move half page down, c-d
+Move half page up, c-u
+Inserting Text, *********
+To Insert Text at the end of a line, A
+to Insert text to the right of the cursor, a
+To Insert text at the beginning of the line, I
+To open a new line below the cursor, o
+To open a new line above the cursor, O
+Undo previous command, u
+To replace a word place the cursor at the beginning of the word, cw
+to replace a character, r
+To insert a return, r <enter>
+To change a part of the word place cursor to the right of that which is to be saved, cw
+to delete a line, dd
+to replace a whole line, S
+Yank and Delete and Put, *********
+yank three words, y3w
+yank three letters, y3l
+yank in current word, yiw
+yank all word (includes a trailing space), yaw
+yank the current line, yy
+yank three lines starting at the current one, 3yy
+yank all paragraph (includes trailing newline), yap
+To yank the entire line, yy
+to put the yanked text below current line, p
+to put the yanked text above current line, P
+All commands work with numbers to yank 5 lines, 5yy
+Yank text inline yanks text to end of line, y$
+To move lines use, dd
+Then put the line where you want it, p
+To swap two lines, ddp
+To delete two words, 2dw
+To delete the body of a function, d%
+You can specify the range, :34, 65y / 12, 56d
+You can use mark point, *******
+Go to the line where the selection begins, mk
+this marks the point to alpha 'k', Any other alpha can be used as well
+Then move down to the bottom of the selection, y'k this will yank the lines
+this will delete the lines, d'k
+Using ex Commands, ***********
+Show line numbers, :set nu
+Basic Syntax, :line#,line# co line#
+Copy lines, co
+Designate end of file, $
+Designate from the current line, .
+Select all lines, %
+Move lines, m
+Delete lines, d
+Yank lines, ya
+To select and yank current line to end of file, :.,$ ya
+Searching and replacing, ***********
+To find a character string, / followed by the string
+To scroll through the search results, n N
+If you want vi to ignore case, :set ic
+The find and replace syntax is, :g/search-str/s//replace-str/g
+To substitute 'new' for 'old where g is globally, :s/old/new/g
+To Turn off highlighting until next search, :noh
+To search a word use word boundary symbols, :s\<vi\>:VIM:g
+Match words that are at least 4 charaters long, \w\{5}
+Use Character groupings, \(character group\)
+To find Upper and lower case the, /[T\|t]he
+To find 2 or 4 matches of letters, /\(t\|r\|m\)\{2,4}
+This would be used to swap the first two words of a line, :% s:\(\w\+\)\(\s\+\)\(\w\+\):\3\2\1:
+Pattern match only the first occurance in the line, /^.\{-}\zsfoo
+Go to a specific line number, #gg
+Go to end of file, G
+To insert one file into another, :line# r filename
+To select and copy the entire file, ggyG
+
+part2
+
+Navigating Multiple files buffers, **********
+First save your current file, :w
+to open a new file, :n <filename>
+To switch between two files, :n#
+To Open read-only, view <filename>
+To reload last saved version of a file, :e!
+Buffers, **************
+Switch between buffers, :b<buffer number>
+Get a list of all the buffers, :ls or :files
+Another way to switch between buffers, :b<filename>
+Using tabs, **************
+To open vi with tabs, vi -p file1 file2
+To open tabs while already in vi,  :tabedit file2
+To navigate between tabs, gt - next/ gT - previous
+You can also use the index of the tab, {i}gt
+To move directly to the first tab, :tabfirst
+To move directly to the last tab, :tablast
+To list all the open tabs, :tabs
+To close a tab, :tabclose
+To close all other tabs but the one you are on, :tabonly
+To open vi split screen horiz, vi -o file1 file2
+To open vi split screen vert, vi -O file1 file2
+Split screen within vi horiz, :split
+Split screen within vi vert, :vsplit
+Switch window left, c-w h or left-arrow
+Switch window down, c-w j or dn-arrow
+Switch window up, c-w k or up-arrow
+Switch window right, c-w l or right-arrow
+To cycle through split windows, c-w w
+To close current window, :close
+To close all but current window, :only
+To copy from cursor to end of 
+To open a terminal window, :! bash
+Session Files, **************
+To create session file, :mksession session_filename.vim
+To start vim with a particular session, vim -S session_filename.vim
+To open your session inside vi, :source session_filename.vim
+If you make any changes and want to resave the session, :mks!
+Fold Code Blocks, ***********
+go to the begining of the function body and hit, mb  this will place a mark 
+Then go to the bottom of the code block with, %
+And then fold it by typing, zf'b
+You can do the same thing with line numbers, ****
+just type, :5, 16fo
+this will fold the function block
+To toggle between open and closed type, zo - open /  zc - close
+Or to toggle just type, za
+Auto complete mode, ctrl-n
+File Explorer, ******************
+To open a file explorer, :Explore
+To open in horiz split, :Sexplore
+To open in vertical split, :Vexplore
+Exit, :q
+Regex Stuff, ****************
+To delete the pattern matched in the whole file, :%s/pattern//
+To search and replace on specific lines, :5,12s/foo/bar/
+You can search and replace on specific lines and columns,*****
+Here is an example of the syntax, :7s/\%19cline/plate/  This will replace line with plate in row 7 col 19
+Macros, ****************
+To record a macro and set it to an alpha, qa
+this starts recording and then sets the macro to 'a'
+to end recording press, q in normal mode
+to run the macro then press, @a
+To repeat it on multiple lines press, @@

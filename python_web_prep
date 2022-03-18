@@ -1,0 +1,10 @@
+
+Python Info, *******
+How to install packages, ***********
+Only install packages inside virtual environments, TIP
+To istall the package you need pip installed, 
+How to setup virtual environments, ********
+virtual envrionments are setup using venv, python -m venv "ENV_DIR"
+then to activate it you just run the script in its binary directory, source DIR/bin/activate
+If you are already in the directory where you want the virtual environment
+you merely need to name the directory for the virt env, python -m venv my_env

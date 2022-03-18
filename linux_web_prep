@@ -1,0 +1,10 @@
+
+- Linux Commands
+
+To Open a folder in the file explorer from the terminal, xdg-open .
+Another way, browse .
+
+Run two scripts one after another
+sudo apt update && sudo apt upgrade
+
+ 

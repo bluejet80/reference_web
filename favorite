@@ -1,0 +1,58 @@
+These are notes on the Favorites website
+
+I will write a script to convert the information into the js object
+
+The basic layout for the information will be:
+1, name, address, description, date, categorys, similar pages
+
+1, Google, http:\\google.com, Search Website, 12/14/13, search web productivity, duckduckgo.com
+2, Reddit, http:\\reddit.com, News and Opinion Website, 3/18/19, information news opinion, geocities
+3, Drawing Charts w JS, https://www.freecodecamp.org/news/how-to-make-your-first-javascript-chart/, This site shows how to draw charts with javascript, 1/18/22, data science js, none
+4, Pagination w JS, https://stackoverflow.com/questions/25434813/simple-pagination-in-javascript, This page shows how to add pagination to your websites with javascript, 4/8/21, web js journals, none
+
+
+the js object will be like this
+
+programming_info = {
+	category: ['video','webpage','app','music','tutorial','product','news'] // categories will be different for each page. 
+	p1: {
+		title: 'title'
+		add: 'http:\\website.com'
+		desc: 'This is a webiste about a website'
+		date: '3/22/22'
+		type: this.category[2]
+		sites: 'Similar to github'
+
+	}
+	p2: {
+		title: 'title'
+		add: 'http:\\website.com'
+		desc: 'This is a webiste about a website'
+		date: '3/22/22'
+		type: this.category[2]
+		sites: 'Similar to github'
+
+	}
+	p3: {
+		title: 'title'
+		add: 'http:\\website.com'
+		desc: 'This is a webiste about a website'
+		date: '3/22/22'
+		type: this.category[2]
+		sites: 'Similar to github'
+	}
+}
+
+python script
+
+with open('emacs_temp', 'r+', encoding='utf-8') as file:
+
+    lines = file.readlines()
+    file.seek(0)
+    for line in lines:
+        line = line.rstrip('\n')
+        x = line.split(", ")
+        file.write('  p', x[0],': {\n   title: ', x[1],'\n   add: ', x[2],'\n'  desc: ', x[3],'\n   date: ', x[4],'\n   type: ', x[5],'\n   sites: ', x[6],'\n}\n}\n)
+
+
+

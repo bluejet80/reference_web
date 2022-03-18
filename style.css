@@ -86,7 +86,7 @@ body {
 #main > div {
   /* format first level divs only */
   width: 470px;
-  height: 34in;
+  height: 35in;
   border-radius: 1em;
   margin: 5px;
   border: 2px solid black;
@@ -153,15 +153,21 @@ body {
   text-align: left;
   text-indent: 10%;
 }
+table {
+	width:100%;
+}
 
-.text td {
+table td {
 	padding: 5px;
-	margin-right: 10px;
 	width: 50%;
+	text-align:center;
 }
 .first {
 	text-align: center;
 	font-weight: bold;
+}
+.second {
+	text-align: center;
 }
 
 h2 {

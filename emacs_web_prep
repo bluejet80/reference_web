@@ -1,0 +1,41 @@
+Emacs Commands, *****
+Text manipulation, ******
+To make a word CAPITALIZED position cursor at the beginning of the word, a-u
+To turn a long line into a paragraph, a-q
+To copy/yank text, a-w
+To paste text, c-y
+To cut text, c-w
+To move around Text, *****
+Beginning of line, c-a
+End of line, c-e
+Up a line, c-p
+Down a line, c-n
+Move up and Down by Paragraph, a-e a-a
+Forward and back by words, a-f a-b
+Center cursor on page, c-l
+Grow or Shrink Text, *****
+To make text bigger, c-x c-+
+To make text smaller, c-x c--
+Buffers and windows, *****
+Switch between buffer windows, c-x o
+Close all other windows except the one you are on, c-x 1
+Close the buffer you are on, c-x 0
+Split the window horizontally, c-x 2
+Split the window vertically, c-x 3
+Save as a new file, c-c w
+Winner-Mode to Undo a change in the buffer, c-c left
+Select all the text in a buffer, c-x h
+To run commands, a-x
+To Search buffer, c-s
+Reverse Search, c-r
+Helpful Information, ******
+Look for help on a function, c-h f
+Show available commands for current mode, c-h m
+Help related to variables, c-h v
+To find which function is bound to a key, c-h k
+To see which key bindings are defined for a given function, c-h w
+To see whether other options are available, c-h ?
+Slime, *****
+
+
+

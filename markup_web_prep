@@ -1,0 +1,11 @@
+
+- markup commands, *******
+linebreak, end line with two or more spaces
+Code Block, use three single quotes
+Images, ![Tux, the Linux mascot](/assets/images/tux.png)
+Horizontal rules, three or more astrix*** or dashes---
+Hyperlinks, [Duck Duck Go](https://duckduckgo.com)
+URLs and emails, &lt;email@email.com&gt; &lt;www.google.com&gt;
+Reference links within the document, toplink: [html/css][1] bottomlink:[1]
+Linking images, [![name](src/image.jpg "alt text")](https://www.oranges.com)
+
